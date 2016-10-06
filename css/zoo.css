@@ -8,11 +8,21 @@
 .wood-pad{
 display: inline;
 max-width: 100%;
-width:100%;
-position: absolute;
+width:1000px;
+height: 400px;
+position: center;
 bottom:0;
 
-  }
+}
+
+.text-area{
+width: 100%;
+height:100%;
+z-index: -1;
+
+}
+
+
 
 .header-size{
   display: inline;
@@ -25,7 +35,7 @@ bottom:0;
 
 
 .burgler-size{
-  width: 100%;
+  width: 10%;
   height:10%;
   margin-left: auto;
   margin-right: auto;
@@ -33,8 +43,8 @@ bottom:0;
 }
 
 .punk-size{
-  width: 100%;
-  height:100%;
+  width: 10%;
+  height:10%;
   margin-left: auto;
   margin-right: 100px;
   top: 0;
@@ -44,8 +54,8 @@ bottom:0;
 }
 
 .janitor-size{
-  width: 100%;
-  height:100%;
+  width: 10%;
+  height:10%;
   margin-left: auto;
   margin-right: 100px;
   top: 0;
