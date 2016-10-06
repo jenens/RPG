@@ -2,9 +2,6 @@ var dataObject = [
 	
 ]
 
-
-
-
 function character(){
 this.health = 100;
 getHealth =>{return this.health}
@@ -13,8 +10,7 @@ getHealth =>{return this.health}
 
 
 function chooseCharacter(type){
-document.getElementById("background").innerHTML="<h1>THIS WORKS!!!!!!!!!!!!</h1>";
-console.log("THIS THING WORKS");
+document.getElementById("background").innerHTML="<h1></h1>";
 var player;
 if (type==="burgler") {
 	player=new burgler();
