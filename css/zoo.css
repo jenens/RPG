@@ -1,14 +1,63 @@
-  body {
+/*  body {
   background: #056839 url('../img/header.jpg') no-repeat center center;
   background-size: 100% 100%;
   width: 100%;
   height:100%;
   }
+*/
+.wood-pad{
+display: inline;
+max-width: 100%;
+width:100%;
+position: absolute;
+bottom:0;
+
+  }
+
+.header-size{
+  display: inline;
+  max-width: 100%;
+  width:100%;
+  position: top;
+  bottom:0;
+
+  }
 
 
- /* .wood-pad{
-  height: 50%; 
-  width: 100%; 
-  top padding: 100px;
-  float:right;
-  }*/
+.burgler-size{
+  width: 100%;
+  height:10%;
+  margin-left: auto;
+  margin-right: auto;
+  top-padding: 100px;
+}
+
+.punk-size{
+  width: 100%;
+  height:100%;
+  margin-left: auto;
+  margin-right: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.janitor-size{
+  width: 100%;
+  height:100%;
+  margin-left: auto;
+  margin-right: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+
+
+}
+
+
+
+
+
