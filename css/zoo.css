@@ -66,11 +66,14 @@ z-index: -1;
 }
 
 #background {
-height: 200px;
-width: 200px;
+background-size: contain;
+display: cover;
+height: auto;
+width: auto;
 background: #000 url("../img/wood.png") no-repeat center center;
-size: cover;
 }
+
+
 
 
 

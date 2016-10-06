@@ -17,11 +17,13 @@ if (type==="burgler") {
 
 else if (type==="janitor"){
 	player=new janitor();
+	console.log("THIS Janitor WORKS");
 	
 }
 
 else if (type==="punk") {
 	player=new punk();
+	console.log("THIS Punk WORKS");
 	
 }
 
