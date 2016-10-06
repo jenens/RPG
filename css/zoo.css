@@ -62,12 +62,15 @@ z-index: -1;
   bottom: 0;
   left: 0;
   right: 0;
- 
-
 
 }
 
-
+#background {
+height: 200px;
+width: 200px;
+background: #000 url("../img/wood.png") no-repeat center center;
+size: cover;
+}
 
 
 
