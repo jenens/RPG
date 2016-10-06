@@ -1,9 +1,11 @@
-function character(type){
+function character(){
 this.health = 100;
 getHealth =>{return this.health}
-this.banana = 1;
-getBanana =>{return this.banana}
 }
+
+var player 1 = new janitor ("");
+var player 2 = new punk ("");
+var player 3 = new burgler ("");
 
 
 function chooseCharacter(type){
@@ -44,3 +46,4 @@ function getBanana(){
 
  // document.getElementById(content.style.display none)
 
+>>>>>>> 9007b01ba799232b69d8276f8c75620e45e406c3
