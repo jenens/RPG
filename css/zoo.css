@@ -66,13 +66,13 @@ z-index: -1;
 }
 
 #background {
-background-size: contain;
-display: cover;
-height: auto;
-width: auto;
-background: #000 url("../img/wood.png") no-repeat center center;
+background-size: 100% 100%;
+height: 500px;
+background: #FFF url("../img/wood.png") no-repeat center center;
+padding-top: 50px;
 }
 
+/*bgcolor="#056839"*/
 
 
 
