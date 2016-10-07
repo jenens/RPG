@@ -87,48 +87,96 @@ document.getElementById("prologue").style.display="none";
 function aquarium() {
 var htmlOutput = "<h1> Welcome to the aquarium! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
-htmlOutput += '<button onclick="" type="button">Option One</button>';
-htmlOutput += '<button onclick="" type="button">Option Two</button>';
+htmlOutput += '<button onclick="safari()" type="button">Option One</button>';
+htmlOutput += '<button onclick="safari()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+}
 
-}
 function safari() {
-document.getElementById("safari").style.display="none";
+var htmlOutput = "<h1> Welcome to the safari! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="jungle()" type="button">Option One</button>';
+htmlOutput += '<button onclick="jungle()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function jungle() {
-document.getElementById("jungle").style.display="none";
+var htmlOutput = "<h1> Welcome to the jungle! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="pettingZoo()" type="button">Option One</button>';
+htmlOutput += '<button onclick="pettingZoo()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function pettingZoo() {
-document.getElementById("pettingZoo").style.display="none";
+var htmlOutput = "<h1> Welcome to the petting zoo! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="elephantEnclosure()" type="button">Option One</button>';
+htmlOutput += '<button onclick="elephantEnclosure()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function elephantEnclosure() {
-document.getElementById("elephantEnclosure").style.display="none";
+var htmlOutput = "<h1> Welcome to the elephant enclosure! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="monkeyEnclosure()" type="button">Option One</button>';
+htmlOutput += '<button onclick="monkeyEnclosure()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function monkeyEnclosure() {
-document.getElementById("monkeyEnclosure").style.display="none";
+var htmlOutput = "<h1> Welcome to the monkey enclosure! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="reptileEnclosure()" type="button">Option One</button>';
+htmlOutput += '<button onclick="reptileEnclosure()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function reptileEnclosure() {
-document.getElementById("reptileEnclosure").style.display="none";
+var htmlOutput = "<h1> Welcome to the reptile enclosure! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="lionEnclosure()" type="button">Option One</button>';
+htmlOutput += '<button onclick="lionEnclosure()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function lionEnclosure() {
-document.getElementById("lionEnclosure").style.display="none";
+var htmlOutput = "<h1> Welcome to the lion enclosure! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="beekeepersHouse()" type="button">Option One</button>';
+htmlOutput += '<button onclick="beekeepersHouse()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function beekeepersHouse() {
-document.getElementById("beekeepersHouse").style.display="none";
+var htmlOutput = "<h1> Welcome to the beekeeper's house! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="birdEnclosure()" type="button">Option One</button>';
+htmlOutput += '<button onclick="birdEnclosure()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
 function birdEnclosure() {
-document.getElementById("birdEnclosure").style.display="none";
+var htmlOutput = "<h1> Welcome to the bird enclosure! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option One</button>';
+htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 
 function showOne(thingToShow){
-	document.getElementById(thingToShow).style.display="block";
+var htmlOutput = "<h1> Welcome to the safari! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="" type="button">Option One</button>';
+htmlOutput += '<button onclick="" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
-function takeAwayText() {
-	var invisibleText = document.getElementById("noTextOnClick");
-	invisibleText.style.visibility = "hidden";
-}
+// function takeAwayText() {
+// 	var invisibleText = document.getElementById("noTextOnClick");
+// 	invisibleText.style.visibility = "hidden";
+// }
 
 // hideAll();
 // showOne("jungle");
