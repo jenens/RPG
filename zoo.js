@@ -52,6 +52,7 @@ var player3 = new burgler("black");
 function chooseCharacter(type){
 var player;
 if (type==="burgler") {
+	console.log("this burgler works");
 	player=new burgler();
 	
 }
@@ -78,12 +79,24 @@ function getBanana(){
 }
 }
 
-function changePage {
+function hideAll () {
 document.getElementById("prologue").style.display="none";
-document.getElementById("aquarium").style.display="block";
-document.getElementById("safari").style.display="block";
+document.getElementById("aquarium").style.display="none";
+document.getElementById("safari").style.display="none";
+document.getElementById("jungle").style.display="none";
+document.getElementById("pettingZoo").style.display="none";
+document.getElementById("elephantEnclosure").style.display="none";
+document.getElementById("monkeyEnclosure").style.display="none";
+document.getElementById("reptileEnclosure").style.display="none";
+document.getElementById("lionEnclosure").style.display="none";
+document.getElementById("beekeepersHouse").style.display="none";
+document.getElementById("birdEnclosure").style.display="none";
 }
 
-
+function showOne(thingToShow){
+	document.getElementById(thingToShow).style.display="block";
+}
+// hideAll();
+// showOne("jungle");
 
 
