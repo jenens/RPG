@@ -38,3 +38,7 @@ function getBanana(){
 	getScore =>{return this.score}
 }
 }
+
+
+
+
