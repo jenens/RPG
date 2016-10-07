@@ -1,6 +1,18 @@
-var dataObject = [
-	
+var randomEvents = [
+	{ situation: "YAY! You ran faster than the cheetah!", getHealth: 10, getBanana: 0},
+	{ situation: "OH NO! Kangaroo tried to fight you and you lost!", getHealth: -10, getBanana: 0},	
+	{ situation: "YAY! You got to take a ride on the carousel!", getHealth: 0, getBanana: 10},
+	{ situation: "OH NO! You were attacked by a lion!", getHealth: -10, getBanana: 0},
+	{ situation: "OH NO! You were attacked by a hippo!", getHealth: -10, getBanana: 0},
+	{ situation: "YAY! You get to do aerobics with the elephants!", getHealth: 0, getBanana: 10},
+	{ situation: "OH NO! A monkey stole your bananas!", getHealth: 0, getBanana: -10},
+	{ situation: "YAY! You get to swim the dolphins!", getHealth: 10, getBanana: 5},
+	{ situation: "OH NO! A porcupine shot his quills at you!", getHealth: -10, getBanana: 0},
+	{ situation: "YAY! A koala gave you a banana he found!", getHealth: 0, getBanana: 5},
+	{ situation: "OH NO! You were spit on by a llama named Tina!", getHealth: -10, getBanana:0},
+	{ situation: "YAY! A monkey gave you his bananas!", getHealt: 0, getBanana: 10},
 ]
+
 
 function character(){
 var health = 100;
