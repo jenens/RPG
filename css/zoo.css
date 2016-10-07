@@ -86,31 +86,70 @@ h1 {
 #aquarium {
   display: none;
 }
+#aquariumEducation{
+  display: none;
+}
+
 #safari {
   display: none;
 }
+#safariEducation {
+  display: none;
+}
+
 #jungle {
   display: none;
 }
+#jungleEducation {
+  display: none;
+}
+
 #pettingZoo {
   display: none;
 }
+#pettingZooEducation {
+  display: none;
+}
+
 #elephantEnclosure {
   display: none;
 }
+#elephantEducation {
+  display: none;
+}
+
 #monkeyEnclosure {
   display: none;
 }
+#monkeyEducation {
+  display: none;
+}
+
 #reptileEnclosure {
   display: none;
 }
+#reptileEducation {
+  display: none;
+}
+
 #lionEnclosure {
   display: none;
 }
+#lionEducation {
+  display: none;
+}
+
 #beekeeperHouse {
   display: none;
 }
+#beekeeperEducation {
+  display: none;
+}
+
 #birdEnclosure {
+  display: none;
+}
+#birdEducation {
   display: none;
 }
 
@@ -118,6 +157,9 @@ h1 {
   display: none;
 }
 
-
+.image{
+  width: 300px;
+  height: 300px;
+}
 
 

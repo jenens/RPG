@@ -100,25 +100,49 @@ function hideAll() {
 document.getElementById("prologue").style.display="none";
 }
 
+
 function aquarium() {
-var htmlOutput = "<h1> Welcome to the aquarium! </h1>";
-htmlOutput += "<p> Here is where our story will go. </p>";
+var htmlOutput = "<h1>Welcome to the aquarium!</h1>";
+htmlOutput += "<p>Here is where our story will go.</p>";
+htmlOutput += '<button onclick="aquariumEducation()" type="button">Move on to learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function aquariumEducation() {
+var htmlOutput = "<h1> Learn more about aquariums </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING</p>";
 htmlOutput += '<button onclick="safari()" type="button">Option One</button>';
 htmlOutput += '<button onclick="safari()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
+
 function safari() {
 var htmlOutput = "<h1> Welcome to the safari! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="safariEducation()" type="button">Move on to learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function safariEducation() {
+var htmlOutput = "<h1> Learn more about the Safari </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING</p>";
 htmlOutput += '<button onclick="jungle()" type="button">Option One</button>';
 htmlOutput += '<button onclick="jungle()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
+
 function jungle() {
 var htmlOutput = "<h1> Welcome to the jungle! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="jungleEducation()" type="button">Move on to learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function jungleEducation() {
+var htmlOutput = "<h1> Learn more about the Jungle </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
 htmlOutput += '<button onclick="pettingZoo()" type="button">Option One</button>';
 htmlOutput += '<button onclick="pettingZoo()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -126,7 +150,14 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function pettingZoo() {
 var htmlOutput = "<h1> Welcome to the petting zoo! </h1>";
-htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
+htmlOutput += '<button onclick="pettingZooEducation()" type="button">Move on to learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function pettingZooEducation() {
+var htmlOutput = "<h1> Learn more about petting zoos </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
 htmlOutput += '<button onclick="elephantEnclosure()" type="button">Option One</button>';
 htmlOutput += '<button onclick="elephantEnclosure()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -135,6 +166,13 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function elephantEnclosure() {
 var htmlOutput = "<h1> Welcome to the elephant enclosure! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="elephantEducation()" type="button">Move on to learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function elephantEducation() {
+var htmlOutput = "<h1> Learn more about Elephants </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING</p>";
 htmlOutput += '<button onclick="monkeyEnclosure()" type="button">Option One</button>';
 htmlOutput += '<button onclick="monkeyEnclosure()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -143,6 +181,13 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function monkeyEnclosure() {
 var htmlOutput = "<h1> Welcome to the monkey enclosure! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="monkeyEducation()" type="button">Move on to Learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function monkeyEducation() {
+var htmlOutput = "<h1> Learn more about Monkeys </h1>";
+htmlOutput += "<p>  Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
 htmlOutput += '<button onclick="reptileEnclosure()" type="button">Option One</button>';
 htmlOutput += '<button onclick="reptileEnclosure()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -151,6 +196,13 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function reptileEnclosure() {
 var htmlOutput = "<h1> Welcome to the reptile enclosure! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="reptileEducation()" type="button">Move on to Learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function reptileEducation() {
+var htmlOutput = "<h1> Learn more about Reptiles </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
 htmlOutput += '<button onclick="lionEnclosure()" type="button">Option One</button>';
 htmlOutput += '<button onclick="lionEnclosure()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -159,6 +211,13 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function lionEnclosure() {
 var htmlOutput = "<h1> Welcome to the lion enclosure! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="lionEducation()" type="button">Move on to Learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function lionEducation() {
+var htmlOutput = "<h1> Learn more about Lions </h1>";
+htmlOutput += "<p>  Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
 htmlOutput += '<button onclick="beekeepersHouse()" type="button">Option One</button>';
 htmlOutput += '<button onclick="beekeepersHouse()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -167,6 +226,13 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function beekeepersHouse() {
 var htmlOutput = "<h1> Welcome to the beekeeper's house! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="beekeepersEducation()" type="button">Move on to Learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function beekeepersEducation() {
+var htmlOutput = "<h1> Learn more about Beekeepers </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
 htmlOutput += '<button onclick="birdEnclosure()" type="button">Option One</button>';
 htmlOutput += '<button onclick="birdEnclosure()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -175,6 +241,13 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function birdEnclosure() {
 var htmlOutput = "<h1> Welcome to the bird enclosure! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="birdEducation()" type="button">Move on to Learn more</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+}
+
+function birdEducation() {
+var htmlOutput = "<h1> Learn more about Birds </h1>";
+htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
 htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option One</button>';
 htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
@@ -185,6 +258,7 @@ var htmlOutput = "<h1> YOU MADE IT TO THE ZOO KEEPER'S HOUSE! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
 htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option One</button>';
 htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option Two</button>';
+htmlOutput += '<img class="image" src="img/ZooKeepersHouse.png">'
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
