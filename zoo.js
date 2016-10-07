@@ -114,6 +114,7 @@ htmlOutput += "<p> Here is where our story will go. </p>";
 htmlOutput += '<button onclick="jungle()" type="button">Option One</button>';
 htmlOutput += '<button onclick="jungle()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+random (0);
 }
 
 function jungle() {
@@ -130,6 +131,7 @@ htmlOutput += "<p> Here is where our story will go. </p>";
 htmlOutput += '<button onclick="elephantEnclosure()" type="button">Option One</button>';
 htmlOutput += '<button onclick="elephantEnclosure()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+random(3);
 }
 
 function elephantEnclosure() {
@@ -146,6 +148,7 @@ htmlOutput += "<p> Here is where our story will go. </p>";
 htmlOutput += '<button onclick="reptileEnclosure()" type="button">Option One</button>';
 htmlOutput += '<button onclick="reptileEnclosure()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+random(4);
 }
 
 function reptileEnclosure() {
@@ -178,6 +181,7 @@ htmlOutput += "<p> Here is where our story will go. </p>";
 htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option One</button>';
 htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+random(6);
 }
 
 function zooKeepersHouse() {
