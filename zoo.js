@@ -16,9 +16,9 @@ var randomEvents = [
 
 function character(){
 var health = 100;
-this.getHealth = function(){return health};
-this.banana = 1;
-getBanana =>{return this.banana}
+	this.getHealth = function(){return health};
+	this.banana = 1;
+	getBanana =>{return this.banana}
 }
 
 // burglar, punk and janior inherit from character function
@@ -38,13 +38,13 @@ function janitor(color){
 	this.cleaningcart = true;
 }
 
-burgler.prototype=new character();
-punk.prototype=new character();
-janitor.prototype=new character();
+// burgler.prototype=new character();
+// punk.prototype=new character();
+// janitor.prototype=new character();
 
-var player1 = new punk("pink");
-var player2 = new janitor("blue");
-var player3 = new burgler("black");
+// var player1 = new punk("pink");
+// var player2 = new janitor("blue");
+// var player3 = new burgler("black");
 
 
 // Choose Character function has else/if statements
@@ -70,7 +70,8 @@ else if (type==="punk") {
 	
 }
 
-
+document.getElementById("prologue").style.display="none";
+aquarium();
 return player;
 
 function getBanana(){
@@ -79,24 +80,62 @@ function getBanana(){
 }
 }
 
-function hideAll () {
+function hideAll() {
 document.getElementById("prologue").style.display="none";
-document.getElementById("aquarium").style.display="none";
+}
+
+function aquarium() {
+var htmlOutput = "<h1> Welcome to the aquarium! </h1>";
+htmlOutput += "<p> Here is where our story will go. </p>";
+htmlOutput += '<button onclick="" type="button">Option One</button>';
+htmlOutput += '<button onclick="" type="button">Option Two</button>';
+document.getElementById("storyArea").innerHTML= htmlOutput;
+
+}
+function safari() {
 document.getElementById("safari").style.display="none";
+}
+function jungle() {
 document.getElementById("jungle").style.display="none";
+}
+function pettingZoo() {
 document.getElementById("pettingZoo").style.display="none";
+}
+function elephantEnclosure() {
 document.getElementById("elephantEnclosure").style.display="none";
+}
+function monkeyEnclosure() {
 document.getElementById("monkeyEnclosure").style.display="none";
+}
+function reptileEnclosure() {
 document.getElementById("reptileEnclosure").style.display="none";
+}
+function lionEnclosure() {
 document.getElementById("lionEnclosure").style.display="none";
+}
+function beekeepersHouse() {
 document.getElementById("beekeepersHouse").style.display="none";
+}
+function birdEnclosure() {
 document.getElementById("birdEnclosure").style.display="none";
 }
+
 
 function showOne(thingToShow){
 	document.getElementById(thingToShow).style.display="block";
 }
+
+function takeAwayText() {
+	var invisibleText = document.getElementById("noTextOnClick");
+	invisibleText.style.visibility = "hidden";
+}
+
 // hideAll();
 // showOne("jungle");
 
+//each area is a function that modifies the story area (html id) when it is called 
+//can re-write HTML in JS .innerHTML will do the changes
+
+// <button onclick= "hideAll(); showOne('aquarium');"
+//                         type="button">Aquarium</button>    
 
