@@ -1,4 +1,4 @@
-var randomEvents = [
+var randomSituations = [
 	{ situation: "YAY! You ran faster than the cheetah!", getHealth: 10, getBanana: 0},
 	{ situation: "OH NO! Kangaroo tried to fight you and you lost!", getHealth: -10, getBanana: 0},	
 	{ situation: "YAY! You got to take a ride on the carousel!", getHealth: 0, getBanana: 10},
@@ -12,6 +12,22 @@ var randomEvents = [
 	{ situation: "OH NO! You were spit on by a llama named Tina!", getHealth: -10, getBanana:0},
 	{ situation: "YAY! A monkey gave you his bananas!", getHealt: 0, getBanana: 10},
 ]
+
+var randomOccurrence = [];
+for (var i=0; i < 1; i++){
+	random()
+}
+
+console.log(randomEvent);
+
+function random(){
+	var cycle = randomSituations[Math.floor(Math.random() * randomSituations.length)];
+
+if (randomOccurrence.indexOf(cycle) == -1)
+	randomOccurrence.push(cycle);
+else
+	random();
+}
 
 
 function character(){
@@ -164,22 +180,15 @@ htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option Two</but
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
-
-function showOne(thingToShow){
-var htmlOutput = "<h1> Welcome to the safari! </h1>";
+function zooKeepersHouse() {
+var htmlOutput = "<h1> YOU MADE IT TO THE ZOO KEEPER'S HOUSE! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
-htmlOutput += '<button onclick="" type="button">Option One</button>';
-htmlOutput += '<button onclick="" type="button">Option Two</button>';
+htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option One</button>';
+htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Option Two</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
-// function takeAwayText() {
-// 	var invisibleText = document.getElementById("noTextOnClick");
-// 	invisibleText.style.visibility = "hidden";
-// }
-
-// hideAll();
-// showOne("jungle");
+//at end of game, link one button to results= final score and final health 
 
 //each area is a function that modifies the story area (html id) when it is called 
 //can re-write HTML in JS .innerHTML will do the changes
