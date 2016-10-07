@@ -50,7 +50,6 @@ var player3 = new burgler("black");
 // Choose Character function has else/if statements
 
 function chooseCharacter(type){
-document.getElementById("background").innerHTML="<h1></h1>";
 var player;
 if (type==="burgler") {
 	player=new burgler();
@@ -77,6 +76,12 @@ function getBanana(){
 	this.score = +1;
 	getScore =>{return this.score}
 }
+}
+
+function changePage {
+document.getElementById("prologue").style.display="none";
+document.getElementById("aquarium").style.display="block";
+document.getElementById("safari").style.display="block";
 }
 
 
