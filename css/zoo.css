@@ -79,6 +79,10 @@ h1 {
 }
 /*bgcolor="#056839"*/
 
+#noTextOnClick {
+  visibility: visible;
+}
+
 #aquarium {
   display: none;
 }

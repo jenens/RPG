@@ -20,7 +20,6 @@
 
     </head>
 
-
     <body>
         <header>
             <img class="header-size" src="img/header.png">
@@ -32,7 +31,7 @@
             <div class="row" id="prologue">
 
                 <h1 class= "heading"> Welcome to the Zoo After Hours! </h1>
-                <p class= "openingParagraph">
+                <p class= "openingParagraph" id="noTextOnClick">
                     The animals have all gotten out of their cages, and you have to get through the enclosures to get to the zoo-keeper’s house to help him get the animals back into their cages! Collect as many bananas as you can on the way to help lure the animals back into the cages, while keeping your health intact. Pick a character and GOOD LUCK!
                 </p>
             
@@ -41,7 +40,7 @@
                     <div class="col-sm-4">
                         <img class="burgler-size" src="img/burgler.png">
 
-                        <button onclick="chooseCharacter('burgler')" type="button">Burgler</button>    
+                        <button onclick="chooseCharacter('burgler'); takeAwayText();" type="button">Burgler</button>    
 
                     </div>
 
@@ -63,38 +62,8 @@
                 </div>
             </div>
 
-            <div class= "row" id= "aquarium">
-                <button onclick= "hideAll() showOne("safari")"
-                        type="button">Aquarium</button> 
-                <h1> You've made it to the aquarium! </h1>
-                    
-            </div>
-            <div class= "row" id= "safari">
-                <h1> You've made it to the safari! </h1>
-            </div>
-            <div class= "row" id= "jungle">
-                <h1> You've made it to the Jungle! </h1>
-            </div>
-            <div class= "row" id= "pettingZoo">
-                <h1> You've made it to the petting zoo! </h1>
-            </div>
-            <div class= "row" id= "elephantEnclosure">
-                <h1> You've made it to the elephant enclosure! </h1>
-            </div>
-            <div class="row" id="monkeyEnclosure">
-                <h1> You've made it to the monkey enclosure! </h1>
-            </div>
-            <div class= "row" id= "reptileEnclosure">
-                <h1> You've made it to the reptile enclosure! </h1>
-            </div>
-            <div class= "row" id="lionEnclosure">
-                <h1> You've made it to the lion enclosure! </h1>
-            </div>
-            <div class= "row" id="beekeeperHouse">
-                <h1> You've made it to the beekeeper's house! </h1>
-            </div>
-            <div class= "row" id="birdEnclosure">
-                <h1> You've made it to the bird enclosure! </h1>
+            <div class= "row" id= "storyArea">
+
             </div>
         </div>
         <!-- jQuery -->
