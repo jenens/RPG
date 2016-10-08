@@ -77,6 +77,11 @@ z-index: -1;
 h1 {
   text-align: center;
 }
+
+p {
+  font-style: bold;
+  font-size: 30px;
+}
 /*bgcolor="#056839"*/
 
 /*#noTextOnClick {
