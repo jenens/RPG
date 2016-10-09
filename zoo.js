@@ -37,7 +37,7 @@ var health = 100;
 
 // burglar, punk and janior inherit from character function
 
-function burgler(color){
+function burglar(color){
 	this.mask = color;
 	this.runningshoes = true;
 }
@@ -65,8 +65,8 @@ var bananaHolder = [1,]
 
 function chooseCharacter(type){
 var player;
-if (type==="burgler") {
-	player=new burgler();
+if (type==="burglar") {
+	player=new burglar();
 }
 
 else if (type==="janitor"){
@@ -93,159 +93,160 @@ document.getElementById("prologue").style.display="none";
 
 
 function aquarium() {
-var htmlOutput = "<h1>Welcome to the aquarium!</h1>";
+var htmlOutput = "<h1>Welcome to the Aquarium!</h1>";
 htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
-htmlOutput += '<button onclick="aquariumEducation()" type="button">Shark Tank</button>';
-htmlOutput += '<button onclick="putPointsInArray();aquariumEducation()" type="button">Ride a Penguin</button>';
+htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+
 
 alert("You gained 1 banana!");
 }
 
 function aquariumEducation() {
-var htmlOutput = "<h1> Learn more about aquariums </h1>";
+var htmlOutput = "<h1> Learn more about Aquariums </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! </p>";
-htmlOutput += '<button onclick="safari()" type="button"> Next </button>';
+htmlOutput += '<button class="button" onclick="safari()" type="button"> Next </button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 
 function safari() {
-var htmlOutput = "<h1> Welcome to the safari! </h1>";
+var htmlOutput = "<h1> Welcome to the Safari! </h1>";
 htmlOutput += "<p> You made it! Now that you're in the safari, you can get to the next location faster by fighting the lions OR choose to help the giraffe out of a hole for extra bananas! </p>";
-htmlOutput += '<button onclick="safariEducation()" type="button">Fight Lions</button>';
-htmlOutput += '<button onclick="putPointsInArray();safariEducation()" type="button">Help Giraffe</button>';
+htmlOutput += '<button class="button" onclick="safariEducation()" type="button">Fight Lions</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();safariEducation()" id="btnSpace" type="button">Help Giraffe</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function safariEducation() {
 var htmlOutput = "<h1> Learn more about the Safari </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! </p>";
-htmlOutput += '<button onclick="jungle()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="jungle()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random (0);
 }
 
 
 function jungle() {
-var htmlOutput = "<h1> Welcome to the jungle! </h1>";
+var htmlOutput = "<h1> Welcome to the Jungle! </h1>";
 htmlOutput += "<p> You made it! You can choose to climb the banana tree to get to the next enclosure OR swim to the next enclosure through the lagoon!</p>";
-htmlOutput += '<button onclick="jungleEducation()" type="button">Climb Tree</button>';
-htmlOutput += '<button onclick="jungleEducation()" type="button">Swim Lagoon</button>';
+htmlOutput += '<button class="button" onclick="jungleEducation()" type="button">Climb Tree</button>';
+htmlOutput += '<button class="button" onclick="jungleEducation()" id="btnSpace" type="button">Swim Lagoon</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function jungleEducation() {
 var htmlOutput = "<h1> Learn more about the Jungle </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning!  </p>";
-htmlOutput += '<button onclick="pettingZoo()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="pettingZoo()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function pettingZoo() {
-var htmlOutput = "<h1> Welcome to the petting zoo! </h1>";
+var htmlOutput = "<h1> Welcome to the Petting Zoo! </h1>";
 htmlOutput += "<p> You made it! You can either go on a pony ride to get to the next enclosure or feed some goats who may know a shortcut. </p>";
-htmlOutput += '<button onclick="pettingZooEducation()" type="button">Pony Ride</button>';
-htmlOutput += '<button onclick="pettingZooEducation()" type="button">Feed Goats</button>';
+htmlOutput += '<button class="button" onclick="pettingZooEducation()" type="button">Pony Ride</button>';
+htmlOutput += '<button class="button" onclick="pettingZooEducation()" id="btnSpace" type="button">Feed Goats</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function pettingZooEducation() {
-var htmlOutput = "<h1> Learn more about petting zoos </h1>";
+var htmlOutput = "<h1> Learn more about Petting Zoos </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
-htmlOutput += '<button onclick="elephantEnclosure()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="elephantEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random(3);
 }
 
 function elephantEnclosure() {
-var htmlOutput = "<h1> Welcome to the elephant enclosure! </h1>";
+var htmlOutput = "<h1> Welcome to the Elephant Enclosure! </h1>";
 htmlOutput += "<p> You made it! Ride the elephants to get to the next enclosure quickly or walk through the enclosure to possibly find some bananas. </p>";
-htmlOutput += '<button onclick="elephantEducation()" type="button">Ride Elephants</button>';
-htmlOutput += '<button onclick="elephantEducation()" type="button">Walk</button>';
+htmlOutput += '<button class="button" onclick="elephantEducation()" type="button">Ride Elephants</button>';
+htmlOutput += '<button class="button" onclick="elephantEducation()" id="btnSpace" type="button">Walk</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function elephantEducation() {
 var htmlOutput = "<h1> Learn more about Elephants </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING</p>";
-htmlOutput += '<button onclick="monkeyEnclosure()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="monkeyEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function monkeyEnclosure() {
-var htmlOutput = "<h1> Welcome to the monkey enclosure! </h1>";
+var htmlOutput = "<h1> Welcome to the Monkey Enclosure! </h1>";
 htmlOutput += "<p> You made it! Try to steal the monkey's bananas for extra points or choose to bring a crafty monkey with lock picking skills with you. </p>";
-htmlOutput += '<button onclick="monkeyEducation()" type="button">Get Bananas</button>';
-htmlOutput += '<button onclick="monkeyEducation()" type="button">Bring Monkey</button>';
+htmlOutput += '<button class="button" onclick="monkeyEducation()" type="button">Get Bananas</button>';
+htmlOutput += '<button class="button" onclick="monkeyEducation()" id="btnSpace" type="button">Bring Monkey</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function monkeyEducation() {
 var htmlOutput = "<h1> Learn more about Monkeys </h1>";
 htmlOutput += "<p>  Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
-htmlOutput += '<button onclick="reptileEnclosure()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="reptileEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random(4);
 }
 
 function reptileEnclosure() {
-var htmlOutput = "<h1> Welcome to the reptile enclosure! </h1>";
+var htmlOutput = "<h1> Welcome to the Reptile Enclosure! </h1>";
 htmlOutput += "<p> You made it! Throw some bananas at the gila monster to keep him from eating you OR jump across the crocodiles backs to get to the next enclosure. </p>";
-htmlOutput += '<button onclick="reptileEducation()" type="button">Throw Bananas at Gila Monster</button>';
-htmlOutput += '<button onclick="reptileEducation()" type="button">Run Across Crocodiles</button>';
+htmlOutput += '<button class="button" onclick="reptileEducation()" type="button">Throw Bananas at Gila Monster</button>';
+htmlOutput += '<button class="button" onclick="reptileEducation()" id="btnSpace" type="button">Run Across Crocodiles</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function reptileEducation() {
 var htmlOutput = "<h1> Learn more about Reptiles </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
-htmlOutput += '<button onclick="lionEnclosure()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="lionEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function lionEnclosure() {
-var htmlOutput = "<h1> Welcome to the lion enclosure! </h1>";
+var htmlOutput = "<h1> Welcome to the Lion Enclosure! </h1>";
 htmlOutput += "<p> You're getting closer to the zookeeper's house! Next, decide whether you want to roar at the lions to scare them away or run as fast as you can to the next enclosure.</p>";
-htmlOutput += '<button onclick="lionEducation()" type="button">Roar</button>';
-htmlOutput += '<button onclick="lionEducation()" type="button">Run</button>';
+htmlOutput += '<button class="button" onclick="lionEducation()" type="button">Roar</button>';
+htmlOutput += '<button class="button" onclick="lionEducation()" id="btnSpace" type="button">Run</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function lionEducation() {
 var htmlOutput = "<h1> Learn more about Lions </h1>";
 htmlOutput += "<p>  Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
-htmlOutput += '<button onclick="beekeepersHouse()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="beekeepersHouse()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function beekeepersHouse() {
-var htmlOutput = "<h1> Welcome to the beekeeper's house! </h1>";
-htmlOutput += "<p> You made it, but try not to get stung! You can proceed by giving the bees one of your bananas to make it through the enclosure unharmed or give them some of the flowers growing outside their enclosure.</p>;  </p>";
-htmlOutput += '<button onclick="beekeepersEducation()" type="button">Bananas</button>';
-htmlOutput += '<button onclick="beekeepersEducation()" type="button">Flowers</button>';
+var htmlOutput = "<h1> Welcome to the Beekeeper's House! </h1>";
+htmlOutput += "<p> You made it, but try not to get stung! You can proceed by giving the bees one of your bananas to make it through the enclosure unharmed or give them some of the flowers growing outside their enclosure. </p>";
+htmlOutput += '<button class="button" onclick="beekeepersEducation()" type="button">Bananas</button>';
+htmlOutput += '<button class="button" onclick="beekeepersEducation()" id="btnSpace" type="button">Flowers</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function beekeepersEducation() {
-var htmlOutput = "<h1> Learn more about Beekeepers </h1>";
+var htmlOutput = "<h1> Learn more about Bees </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
-htmlOutput += '<button onclick="birdEnclosure()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="birdEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function birdEnclosure() {
-var htmlOutput = "<h1> Welcome to the bird enclosure! </h1>";
+var htmlOutput = "<h1> Welcome to the Bird Enclosure! </h1>";
 htmlOutput += "<p> You're almost there! You can either run to the other side and risk being pooped on by a seagull or help an injured bird that may repay you're kindness in bananas. </p>";
-htmlOutput += '<button onclick="birdEducation()" type="button">Run</button>';
-htmlOutput += '<button onclick="birdEducation()" type="button">Help</button>';
+htmlOutput += '<button class="button" onclick="birdEducation()" type="button">Run</button>';
+htmlOutput += '<button class="button" onclick="birdEducation()" id="btnSpace" type="button">Help</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function birdEducation() {
 var htmlOutput = "<h1> Learn more about Birds </h1>";
 htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
-htmlOutput += '<button onclick="zooKeepersHouse()" type="button">Next</button>';
+htmlOutput += '<button class="button" onclick="zooKeepersHouse()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random(6);
 }
@@ -253,7 +254,7 @@ random(6);
 function zooKeepersHouse() {
 var htmlOutput = "<h1> YOU MADE IT TO THE ZOO KEEPER'S HOUSE! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
-htmlOutput += '<button onclick="scorePage()" type="button">See your score!</button>';
+htmlOutput += '<button class="button" onclick="scorePage()" type="button">See your score!</button>';
 htmlOutput += '<img class="image" src="img/ZooKeepersHouse.png">'
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
