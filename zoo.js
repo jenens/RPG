@@ -18,8 +18,6 @@ for (var i=0; i < 1; i++){
 	random()
 }
 
-console.log(randomEvent);
-
 function random(){
 	var cycle = randomSituations[Math.floor(Math.random() * randomSituations.length)];
 
@@ -54,16 +52,16 @@ function janitor(color){
 	this.cleaningcart = true;
 }
 
-// burgler.prototype=new character();
-// punk.prototype=new character();
-// janitor.prototype=new character();
+function putPointsInArray(){
+	var banana = 1;
+	bananaHolder.push(banana);
+}
 
-// var player1 = new punk("pink");
-// var player2 = new janitor("blue");
-// var player3 = new burgler("black");
+var bananaHolder = [1,]
+// function getPoints () {
+// 	var scoreBoard = 0;
+// }
 
-
-// Choose Character function has else/if statements
 
 function chooseCharacter(type){
 var player;
@@ -83,6 +81,11 @@ document.getElementById("prologue").style.display="none";
 aquarium();
 return player;
 
+function getBanana(){
+	this.score = +1;
+	getScore =>{return this.score}
+}
+}
 
 function hideAll() {
 document.getElementById("prologue").style.display="none";
@@ -93,8 +96,10 @@ function aquarium() {
 var htmlOutput = "<h1>Welcome to the aquarium!</h1>";
 htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
 htmlOutput += '<button onclick="aquariumEducation()" type="button">Shark Tank</button>';
-htmlOutput += '<button onclick="aquariumEducation()" type="button">Ride a Penguin</button>';
+htmlOutput += '<button onclick="putPointsInArray();aquariumEducation()" type="button">Ride a Penguin</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+
+alert("You gained 1 banana!");
 }
 
 function aquariumEducation() {
@@ -109,7 +114,7 @@ function safari() {
 var htmlOutput = "<h1> Welcome to the safari! </h1>";
 htmlOutput += "<p> You made it! Now that you're in the safari, you can get to the next location faster by fighting the lions OR choose to help the giraffe out of a hole for extra bananas! </p>";
 htmlOutput += '<button onclick="safariEducation()" type="button">Fight Lions</button>';
-htmlOutput += '<button onclick="safariEducation()" type="button">Help Giraffe</button>';
+htmlOutput += '<button onclick="putPointsInArray();safariEducation()" type="button">Help Giraffe</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -248,10 +253,23 @@ random(6);
 function zooKeepersHouse() {
 var htmlOutput = "<h1> YOU MADE IT TO THE ZOO KEEPER'S HOUSE! </h1>";
 htmlOutput += "<p> Here is where our story will go. </p>";
-htmlOutput += '<button onclick="getScore()" type="button">See your score!</button>';
+htmlOutput += '<button onclick="scorePage()" type="button">See your score!</button>';
 htmlOutput += '<img class="image" src="img/ZooKeepersHouse.png">'
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
+
+function scorePage() {
+var htmlOutput = "<h1> Here's your score! </h1>";
+htmlOutput += "<p> Great job! Here are how many bananas you gained throughout your game! </p>";
+document.getElementById("storyArea").innerHTML= htmlOutput;
+document.getElementById("displayScore");
+}
+
+
+
+
+
+
 
 
 //at end of game, link one button to results= final score and final health 
