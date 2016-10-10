@@ -93,6 +93,7 @@ Punk.prototype = new Character();
 //     document.getElementById("displayScore").innerHTML = numbers.reduce(getBananaTotal);
 
 
+
 var player;
 function chooseCharacter(type){
 
@@ -113,16 +114,17 @@ function chooseCharacter(type){
 	return player;
 
 
+
 function hideAll() {
 	document.getElementById("prologue").style.display="none";
 }
-
 
 function aquarium() {
 	var htmlOutput = "<h1>Welcome to the Aquarium!</h1>";
 	htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
 	htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
-	htmlOutput += '<button class="button" onclick="putPointsInArray(); aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
+	htmlOutput += '<button class="button" onclick="putPointsInArray();aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
+	htmlOutput += '<button class="button" onclick="player.addBanana(); aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
 	document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -149,9 +151,8 @@ function safariEducation() {
 	htmlOutput += "<p> <h3> LION FACT </h3> Did you know...that, unlike other cats, lions are very social animals? They live in a pride consisting of up to 30 lions! <h3> GIRAFFE FACT </h3> Did you know...that the giraffe is the tallest mammal in the world? </p>";
 	htmlOutput += '<button class="button" onclick="jungle()" type="button">Next</button>';
 	document.getElementById("storyArea").innerHTML= htmlOutput;
-	random (0);
+	alert(random(0));
 }
-
 
 function jungle() {
 	var htmlOutput = "<h1> Welcome to the Jungle! </h1>";
@@ -290,9 +291,6 @@ function scorePage() {
 	
 }
 }
-
-
-
 
 
 

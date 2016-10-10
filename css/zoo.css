@@ -14,8 +14,6 @@
   max-width: 75%;
   width:10px;
   height:100%;
-  z-index: -1;
-
 }
 
 .text-area{
@@ -101,8 +99,13 @@
   max-width: 100%;
   background: #6dc08b url("../img/wood.png") no-repeat center center;
   padding-top: 30px;
+<<<<<<< HEAD
+  border: 10px black;
+=======
   
+>>>>>>> 15a952e195f6b7e8ace647ec6cdba6f9aeb0bd48
 }
+
 
 .openingParagraph {
   margin-left: 50px;
