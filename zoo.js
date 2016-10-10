@@ -27,7 +27,6 @@ else
 	random();
 }
 
-
 function character(){
 var health = 100;
 	this.getHealth = function(){return health};
@@ -51,31 +50,6 @@ function janitor(color){
 	this.mop = color;
 	this.cleaningcart = true;
 }
-
-function putPointsInArray(){
-	var banana = 1;
-	bananaHolder.push(banana);
-}
-
-
-var bananaHolder = [1,]
-function getPoints () {
-	var scoreBoard = 0;
-}
-
-// function bananaPoints(){
-// var burglar  = 1;
-
-// }
-
-
-// function getBananaTotal(total, bananaPoint) {
-//     return total + bananaPoint;
-
-// function displayBananaTotal() {
-//     document.getElementById("displayScore").innerHTML = numbers.reduce(getBananaTotal);
-
-
 
 function chooseCharacter(type){
 var player;
@@ -101,17 +75,23 @@ function getBanana(){
 }
 }
 
+function putPointsInArray(){
+	var banana = 1;
+	bananaHolder.push(banana);
+}
+
+var bananaHolder = []
+
 function hideAll() {
 document.getElementById("prologue").style.display="none";
 }
 
-
 function aquarium() {
-var htmlOutput = "<h1>Welcome to the Aquarium!</h1>";
-htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
-htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
-htmlOutput += '<button class="button" onclick="putPointsInArray();aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
-document.getElementById("storyArea").innerHTML= htmlOutput;
+	var htmlOutput = "<h1>Welcome to the Aquarium!</h1>";
+	htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
+	htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
+	htmlOutput += '<button class="button" onclick="putPointsInArray();aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
+	document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
 function aquariumEducation() {
@@ -135,7 +115,7 @@ var htmlOutput = "<h1> Learn more about the Safari </h1>";
 htmlOutput += "<p> <h3> LION FACT </h3> Did you know...that, unlike other cats, lions are very social animals? They live in a pride consisting of up to 30 lions! <h3> GIRAFFE FACT </h3> Did you know...that the giraffe is the tallest mammal in the world? </p>";
 htmlOutput += '<button class="button" onclick="jungle()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-random (0);
+alert(random(0));
 }
 
 
@@ -275,9 +255,6 @@ htmlOutput += "<p> Great job! Here are how many bananas you gained throughout yo
 document.getElementById("storyArea").innerHTML= htmlOutput;
 alert(bananaHolder.length);
 }
-
-
-
 
 
 
