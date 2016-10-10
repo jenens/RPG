@@ -207,4 +207,30 @@ p {
   color: black;
 }
 
+div.fixedBananaScore {
+    position: absolute;
+    opacity: 0.75;
+    top: 95px;
+    text-align: center;
+    right: 200px;
+    width: 150px;
+    height: 50px;
+    background: white;
+    padding: 3px;
+    border: 3px solid black;
+}
+
+div.fixedHealthScore {
+    position: absolute;
+    opacity: .75;
+    top: 95px;
+    text-align: center;
+    right: 30px;
+    width: 150px;
+    height: 50px;
+    background: white;
+    padding: 3px;
+    border: 3px solid black;
+}
+
 
