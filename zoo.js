@@ -114,12 +114,6 @@ function chooseCharacter(type){
 	return player;
 
 
-function putPointsInArray(){
-	var banana = 1;
-	bananaHolder.push(banana);
-}
-
-var bananaHolder = []
 
 function hideAll() {
 	document.getElementById("prologue").style.display="none";
