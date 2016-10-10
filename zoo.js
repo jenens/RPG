@@ -122,7 +122,7 @@ function aquarium() {
 	var htmlOutput = "<h1>Welcome to the Aquarium!</h1>";
 	htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
 	htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
-	htmlOutput += '<button class="button" onclick="player.addBanana(); aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
+	htmlOutput += '<button class="button" onclick="putPointsInArray(); aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
 	document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
