@@ -98,16 +98,14 @@ htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to ge
 htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
 htmlOutput += '<button class="button" onclick="putPointsInArray();aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-
-
-alert("You gained 1 banana!");
 }
 
 function aquariumEducation() {
 var htmlOutput = "<h1> Learn more about Aquariums </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! </p>";
+htmlOutput += "<p> <h3>SHARK FACT</h3> Did you know...most shark species will drown if they stop moving? <h3> PENGUIN FACT </h3> Did you know...that, while penguins do have wings, they are flightless birds? </p>";
 htmlOutput += '<button class="button" onclick="safari()" type="button"> Next </button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
+alert("You gained 1 banana!");
 }
 
 
@@ -121,7 +119,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function safariEducation() {
 var htmlOutput = "<h1> Learn more about the Safari </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! </p>";
+htmlOutput += "<p> <h3> LION FACT </h3> Did you know...that, unlike other cats, lions are very social animals? They live in a pride consisting of up to 30 lions! <h3> GIRAFFE FACT </h3> Did you know...that the giraffe is the tallest mammal in the world? </p>";
 htmlOutput += '<button class="button" onclick="jungle()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random (0);
@@ -138,7 +136,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function jungleEducation() {
 var htmlOutput = "<h1> Learn more about the Jungle </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning!  </p>";
+htmlOutput += "<p> <h3>JUNGLE FACTS</h3> Did you know...that all of the ants in the jungle combined weigh four timesm ore than all jungle mammals?</p>";
 htmlOutput += '<button class="button" onclick="pettingZoo()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -153,7 +151,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function pettingZooEducation() {
 var htmlOutput = "<h1> Learn more about Petting Zoos </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
+htmlOutput += "<p><h3>PONY FACTS</h3> Did you know...that ponies, while smaller than horses, are used in many working roles? <h3>GOAT FACTS</h3> Did you know...that goats were one of the first animals to be tamed by humans, and have been herded for 9,000 years? </p>";
 htmlOutput += '<button class="button" onclick="elephantEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random(3);
@@ -169,7 +167,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function elephantEducation() {
 var htmlOutput = "<h1> Learn more about Elephants </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING</p>";
+htmlOutput += "<p><h3>ELEPHANT FACTS</h3> Did you know...that elephants are the largest land animals in the world? The largest elephant on record was 24,000 pounds and 13 feet tall at his shoulder!</p>";
 htmlOutput += '<button class="button" onclick="monkeyEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -184,7 +182,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function monkeyEducation() {
 var htmlOutput = "<h1> Learn more about Monkeys </h1>";
-htmlOutput += "<p>  Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
+htmlOutput += "<p><h3>MONKEY FACTS</h3>Did you know...that monkeys peel bananas before eating them? </p>";
 htmlOutput += '<button class="button" onclick="reptileEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random(4);
@@ -200,7 +198,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function reptileEducation() {
 var htmlOutput = "<h1> Learn more about Reptiles </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
+htmlOutput += "<p><h3>GILA MONSTER FACTS</h3> Did you know...that the gila monster is one of only two venomous lizard species? They only live in southwestern United States and northwestern Mexico. <CROCODILE FACTS</h3> Did you know...that crocodiles can't sweat and release heat through the mouth? </p>";
 htmlOutput += '<button class="button" onclick="lionEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -215,7 +213,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function lionEducation() {
 var htmlOutput = "<h1> Learn more about Lions </h1>";
-htmlOutput += "<p>  Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
+htmlOutput += "<p><h3>LION FACTS</h3> Did you know...that in the pride, female's do most of the hunting? </p>";
 htmlOutput += '<button class="button" onclick="beekeepersHouse()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -230,7 +228,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function beekeepersEducation() {
 var htmlOutput = "<h1> Learn more about Bees </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
+htmlOutput += "<p><h3>BEE FACTS</h3> Did you know...that there are three different kinds of bees; the queen, the worker, and the drone? Honey bees also fly at 15 miles per hour! </p>";
 htmlOutput += '<button class="button" onclick="birdEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -245,7 +243,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 function birdEducation() {
 var htmlOutput = "<h1> Learn more about Birds </h1>";
-htmlOutput += "<p> Here is where our educational story will go. Thanks for learning! To move on to the lext level click Option 1 for SOMETHING and click OPTION 2 for SOMETHING </p>";
+htmlOutput += "<p><h3>BIRD FACTS</h3> Did you know...that there are close to 10,000 different species of birds worldwide? The largest of all the species is the ostrich. </p>";
 htmlOutput += '<button class="button" onclick="zooKeepersHouse()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 random(6);
