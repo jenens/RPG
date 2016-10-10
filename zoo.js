@@ -58,9 +58,21 @@ function putPointsInArray(){
 }
 
 var bananaHolder = [1,]
-// function getPoints () {
-// 	var scoreBoard = 0;
+function getPoints () {
+	var scoreBoard = 0;
+}
+
+// function bananaPoints(){
+// var burglar  = 1;
+
 // }
+
+// function getBananaTotal(total, bananaPoint) {
+//     return total + bananaPoint;
+
+// function displayBananaTotal() {
+//     document.getElementById("displayScore").innerHTML = numbers.reduce(getBananaTotal);
+
 
 
 function chooseCharacter(type){
@@ -105,7 +117,8 @@ var htmlOutput = "<h1> Learn more about Aquariums </h1>";
 htmlOutput += "<p> <h3>SHARK FACT</h3> Did you know...most shark species will drown if they stop moving? <h3> PENGUIN FACT </h3> Did you know...that, while penguins do have wings, they are flightless birds? </p>";
 htmlOutput += '<button class="button" onclick="safari()" type="button"> Next </button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-alert("You gained 1 banana!");
+// alert("You gained 1 banana!");
+return(bananaHolder.length);
 }
 
 
@@ -262,6 +275,7 @@ var htmlOutput = "<h1> Here's your score! </h1>";
 htmlOutput += "<p> Great job! Here are how many bananas you gained throughout your game! </p>";
 document.getElementById("storyArea").innerHTML= htmlOutput;
 document.getElementById("displayScore");
+alert(bananaHolder.length);
 }
 
 
