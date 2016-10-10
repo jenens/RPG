@@ -57,6 +57,7 @@ function putPointsInArray(){
 	bananaHolder.push(banana);
 }
 
+
 var bananaHolder = [1,]
 function getPoints () {
 	var scoreBoard = 0;
@@ -66,6 +67,7 @@ function getPoints () {
 // var burglar  = 1;
 
 // }
+
 
 // function getBananaTotal(total, bananaPoint) {
 //     return total + bananaPoint;
@@ -117,8 +119,6 @@ var htmlOutput = "<h1> Learn more about Aquariums </h1>";
 htmlOutput += "<p> <h3>SHARK FACT</h3> Did you know...most shark species will drown if they stop moving? <h3> PENGUIN FACT </h3> Did you know...that, while penguins do have wings, they are flightless birds? </p>";
 htmlOutput += '<button class="button" onclick="safari()" type="button"> Next </button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-// alert("You gained 1 banana!");
-return(bananaHolder.length);
 }
 
 
@@ -142,7 +142,7 @@ random (0);
 function jungle() {
 var htmlOutput = "<h1> Welcome to the Jungle! </h1>";
 htmlOutput += "<p> You made it! You can choose to climb the banana tree to get to the next enclosure OR swim to the next enclosure through the lagoon!</p>";
-htmlOutput += '<button class="button" onclick="jungleEducation()" type="button">Climb Tree</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();jungleEducation()" type="button">Climb Tree</button>';
 htmlOutput += '<button class="button" onclick="jungleEducation()" id="btnSpace" type="button">Swim Lagoon</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -158,7 +158,7 @@ function pettingZoo() {
 var htmlOutput = "<h1> Welcome to the Petting Zoo! </h1>";
 htmlOutput += "<p> You made it! You can either go on a pony ride to get to the next enclosure or feed some goats who may know a shortcut. </p>";
 htmlOutput += '<button class="button" onclick="pettingZooEducation()" type="button">Pony Ride</button>';
-htmlOutput += '<button class="button" onclick="pettingZooEducation()" id="btnSpace" type="button">Feed Goats</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();pettingZooEducation()" id="btnSpace" type="button">Feed Goats</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -173,7 +173,7 @@ random(3);
 function elephantEnclosure() {
 var htmlOutput = "<h1> Welcome to the Elephant Enclosure! </h1>";
 htmlOutput += "<p> You made it! Ride the elephants to get to the next enclosure quickly or walk through the enclosure to possibly find some bananas. </p>";
-htmlOutput += '<button class="button" onclick="elephantEducation()" type="button">Ride Elephants</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();elephantEducation()" type="button">Ride Elephants</button>';
 htmlOutput += '<button class="button" onclick="elephantEducation()" id="btnSpace" type="button">Walk</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -188,7 +188,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function monkeyEnclosure() {
 var htmlOutput = "<h1> Welcome to the Monkey Enclosure! </h1>";
 htmlOutput += "<p> You made it! Try to steal the monkey's bananas for extra points or choose to bring a crafty monkey with lock picking skills with you. </p>";
-htmlOutput += '<button class="button" onclick="monkeyEducation()" type="button">Get Bananas</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();monkeyEducation()" type="button">Get Bananas</button>';
 htmlOutput += '<button class="button" onclick="monkeyEducation()" id="btnSpace" type="button">Bring Monkey</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -205,7 +205,7 @@ function reptileEnclosure() {
 var htmlOutput = "<h1> Welcome to the Reptile Enclosure! </h1>";
 htmlOutput += "<p> You made it! Throw some bananas at the gila monster to keep him from eating you OR jump across the crocodiles backs to get to the next enclosure. </p>";
 htmlOutput += '<button class="button" onclick="reptileEducation()" type="button">Throw Bananas at Gila Monster</button>';
-htmlOutput += '<button class="button" onclick="reptileEducation()" id="btnSpace" type="button">Run Across Crocodiles</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();reptileEducation()" id="btnSpace" type="button">Run Across Crocodiles</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -220,7 +220,7 @@ function lionEnclosure() {
 var htmlOutput = "<h1> Welcome to the Lion Enclosure! </h1>";
 htmlOutput += "<p> You're getting closer to the zookeeper's house! Next, decide whether you want to roar at the lions to scare them away or run as fast as you can to the next enclosure.</p>";
 htmlOutput += '<button class="button" onclick="lionEducation()" type="button">Roar</button>';
-htmlOutput += '<button class="button" onclick="lionEducation()" id="btnSpace" type="button">Run</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();lionEducation()" id="btnSpace" type="button">Run</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -235,7 +235,7 @@ function beekeepersHouse() {
 var htmlOutput = "<h1> Welcome to the Beekeeper's House! </h1>";
 htmlOutput += "<p> You made it, but try not to get stung! You can proceed by giving the bees one of your bananas to make it through the enclosure unharmed or give them some of the flowers growing outside their enclosure. </p>";
 htmlOutput += '<button class="button" onclick="beekeepersEducation()" type="button">Bananas</button>';
-htmlOutput += '<button class="button" onclick="beekeepersEducation()" id="btnSpace" type="button">Flowers</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();beekeepersEducation()" id="btnSpace" type="button">Flowers</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -249,7 +249,7 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 function birdEnclosure() {
 var htmlOutput = "<h1> Welcome to the Bird Enclosure! </h1>";
 htmlOutput += "<p> You're almost there! You can either run to the other side and risk being pooped on by a seagull or help an injured bird that may repay you're kindness in bananas. </p>";
-htmlOutput += '<button class="button" onclick="birdEducation()" type="button">Run</button>';
+htmlOutput += '<button class="button" onclick="putPointsInArray();birdEducation()" type="button">Run</button>';
 htmlOutput += '<button class="button" onclick="birdEducation()" id="btnSpace" type="button">Help</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
@@ -264,9 +264,8 @@ random(6);
 
 function zooKeepersHouse() {
 var htmlOutput = "<h1> YOU MADE IT TO THE ZOO KEEPER'S HOUSE! </h1>";
-htmlOutput += "<p> Here is where our story will go. </p>";
-htmlOutput += '<button class="button" onclick="scorePage()" type="button">See your score!</button>';
-htmlOutput += '<img class="image" src="img/ZooKeepersHouse.png">'
+htmlOutput += '<img class="image" src="img/ZooKeepersHouse.png">';
+htmlOutput += '<center><button class="button" onclick="scorePage()" type="button">See your score!</button><center>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -274,7 +273,6 @@ function scorePage() {
 var htmlOutput = "<h1> Here's your score! </h1>";
 htmlOutput += "<p> Great job! Here are how many bananas you gained throughout your game! </p>";
 document.getElementById("storyArea").innerHTML= htmlOutput;
-document.getElementById("displayScore");
 alert(bananaHolder.length);
 }
 
