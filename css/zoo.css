@@ -14,13 +14,13 @@
   max-width: 75%;
   width:10px;
   height:100%;
+  padding-top: 50px;
 }
 
 .text-area{
   width: 100%;
   height:100%;
   z-index: -1;
-
 }
 
 .footer-style{
@@ -38,11 +38,10 @@
   position: top;
   bottom:0;
   background: #6dc08b;  
+}
 
-  }
 
-  .button
-{
+  .button{
     background-color: #0c8542;
     margin-top: 10px;
     color: white;
@@ -63,8 +62,8 @@
 }
 
 .burglar-size{
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
   top-padding: 100px;
@@ -72,8 +71,8 @@
 }
 
 .punk-size{
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin-left: auto;
   margin-right: 100px;
   top: 0;
@@ -83,8 +82,8 @@
 }
 
 .janitor-size{
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin-left: auto;
   margin-right: 100px;
   top: 0;
@@ -99,11 +98,6 @@
   max-width: 100%;
   background: #6dc08b url("../img/wood.png") no-repeat center center;
   padding-top: 30px;
-<<<<<<< HEAD
-  border: 10px black;
-=======
-  
->>>>>>> 15a952e195f6b7e8ace647ec6cdba6f9aeb0bd48
 }
 
 
@@ -114,11 +108,10 @@
 }
 
 
-
-
 h1 {
   text-align: center;
   color: #0c8542;
+  padding-top: 15px;
 }
 
 h3 {
@@ -241,4 +234,8 @@ div#fixedHealthScore {
     border: 3px solid black;
 }
 
+.prologue {
+  border: 10px;
+  border: black;
+}
 

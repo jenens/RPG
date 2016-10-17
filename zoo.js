@@ -1,82 +1,35 @@
-var randomSituations = [
-	{ situation: "YAY! You ran faster than the cheetah!", getHealth: 10, getBanana: 0},
-	{ situation: "OH NO! Kangaroo tried to fight you and you lost!", getHealth: -10, getBanana: 0},	
-	{ situation: "YAY! You got to take a ride on the carousel!", getHealth: 0, getBanana: 10},
-	{ situation: "OH NO! You were attacked by a lion!", getHealth: -10, getBanana: 0},
-	{ situation: "OH NO! You were attacked by a hippo!", getHealth: -10, getBanana: 0},
-	{ situation: "YAY! You get to do aerobics with the elephants!", getHealth: 0, getBanana: 10},
-	{ situation: "OH NO! A monkey stole your bananas!", getHealth: 0, getBanana: -10},
-	{ situation: "YAY! You get to swim the dolphins!", getHealth: 10, getBanana: 5},
-	{ situation: "OH NO! A porcupine shot his quills at you!", getHealth: -10, getBanana: 0},
-	{ situation: "YAY! A koala gave you a banana he found!", getHealth: 0, getBanana: 5},
-	{ situation: "OH NO! You were spit on by a llama named Tina!", getHealth: -10, getBanana:0},
-	{ situation: "YAY! A monkey gave you his bananas!", getHealt: 0, getBanana: 10},
-]
 
-var randomOccurrence = [];
-for (var i=0; i < 1; i++){
-	random()
+function Character() {
+	this.health = 100;
+	this.bananas = 1;
+
 }
-
-function random(){
-	var cycle = randomSituations[Math.floor(Math.random() * randomSituations.length)];
-
-if (randomOccurrence.indexOf(cycle) == -1)
-	randomOccurrence.push(cycle);
-else
-	random();
-}
-
-
-function Character(){
-	var health = 100;
-	this.getHealth = function(){return health};
-	this.banana = 1;
-	this.addBanana = function(){
-		this.banana = this.banana + 1;
-	}
-
-	this.subtractBanana = function(){
-		this.banana = this.banana - 1;
-	}
-}
-
-
-
-function putPointsInArray(){
-	var banana = 1;
-	bananaHolder.push(banana);
-}
-
-var bananaHolder = [1,]
-function getPoints () {
-	var scoreBoard = 0;
-}
-
 
 
 function Burglar(color){
 	this.mask = color;
-	this.runningshoes = true;
 }
 
 function Punk(color){
-	this.hair = color;
-	this.radio = true;
+	this.hair = style;
 }
 
 function Janitor(color){
 	this.mop = color;
-	this.cleaningcart = true;
 }
 
-var player = new Burglar();
-var player = new Janitor();
-var player = new Punk();
+function affectScore(effect,number, cause){
+	if(effect === 'gained'){
+		this.bananas += number;
+	}else if(effect === "lost"){
+		this.bananas -= number;
+	}
+	console.log('You ' + effect + ' ' + number + " bananas from the " + cause + '. You have ' + this.bananas + " total bananas.");
+}
 
 Burglar.prototype = new Character();
-Janitor.prototype = new Character();
 Punk.prototype = new Character();
+Janitor.prototype = new Character();
 
 
 function chooseCharacter(type){
@@ -94,7 +47,7 @@ else if (type==="punk") {
 }
 
 document.getElementById("prologue").style.display="none";
-aquarium();
+aquarium(player);
 return player;
 
 function getBanana(){
@@ -108,28 +61,33 @@ document.getElementById("prologue").style.display="none";
 }
 
 
-function aquarium() {
+function aquarium(player) {
+	var argShark = ['lost',3,'sharks'];
+	var argPenguin = ['gained',3,'penguins']
 var htmlOutput = "<h1>Welcome to the Aquarium!</h1>";
 htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
 htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
 htmlOutput += '<button class="button" onclick="aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
+// affectScore.call(player,'gained',5,'monkey');
+// console.log(player.bananas);
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
-function aquariumEducation() {
+function aquariumEducation(player, arg) {
+// affectScore.apply(player,arg);
+// console.log(player.bananas);
 var htmlOutput = "<h1> Learn more about Aquariums </h1>";
 htmlOutput += "<p> <h3>SHARK FACT</h3> Did you know...most shark species will drown if they stop moving? <h3> PENGUIN FACT </h3> Did you know...that, while penguins do have wings, they are flightless birds? </p>";
 htmlOutput += '<button class="button" onclick="safari()" type="button"> Next </button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-alert("You gained 1 banana!");
 }
 
 
-function safari() {
+function safari(player) {
 var htmlOutput = "<h1> Welcome to the Safari! </h1>";
 htmlOutput += "<p> You made it! Now that you're in the safari, you can get to the next location faster by fighting the lions OR choose to help the giraffe out of a hole for extra bananas! </p>";
 htmlOutput += '<button class="button" onclick="safariEducation()" type="button">Fight Lions</button>';
-htmlOutput += '<button class="button" onclick="putPointsInArray();safariEducation()" id="btnSpace" type="button">Help Giraffe</button>';
+htmlOutput += '<button class="button" onclick="safariEducation()" id="btnSpace" type="button">Help Giraffe</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -138,7 +96,6 @@ var htmlOutput = "<h1> Learn more about the Safari </h1>";
 htmlOutput += "<p> <h3> LION FACT </h3> Did you know...that, unlike other cats, lions are very social animals? They live in a pride consisting of up to 30 lions! <h3> GIRAFFE FACT </h3> Did you know...that the giraffe is the tallest mammal in the world? </p>";
 htmlOutput += '<button class="button" onclick="jungle()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-random (0);
 }
 
 
@@ -170,7 +127,6 @@ var htmlOutput = "<h1> Learn more about Petting Zoos </h1>";
 htmlOutput += "<p><h3>PONY FACTS</h3> Did you know...that ponies, while smaller than horses, are used in many working roles? <h3>GOAT FACTS</h3> Did you know...that goats were one of the first animals to be tamed by humans, and have been herded for 9,000 years? </p>";
 htmlOutput += '<button class="button" onclick="elephantEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-random(3);
 }
 
 function elephantEnclosure() {
@@ -201,7 +157,6 @@ var htmlOutput = "<h1> Learn more about Monkeys </h1>";
 htmlOutput += "<p><h3>MONKEY FACTS</h3>Did you know...that monkeys peel bananas before eating them? </p>";
 htmlOutput += '<button class="button" onclick="reptileEnclosure()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-random(4);
 }
 
 function reptileEnclosure() {
@@ -262,7 +217,6 @@ var htmlOutput = "<h1> Learn more about Birds </h1>";
 htmlOutput += "<p><h3>BIRD FACTS</h3> Did you know...that there are close to 10,000 different species of birds worldwide? The largest of all the species is the ostrich. </p>";
 htmlOutput += '<button class="button" onclick="zooKeepersHouse()" type="button">Next</button>';
 document.getElementById("storyArea").innerHTML= htmlOutput;
-random(6);
 }
 
 function zooKeepersHouse() {
@@ -278,11 +232,6 @@ var htmlOutput = "<h1> Here's your score! </h1>";
 htmlOutput += "<p> Great job! Here are how many bananas you gained throughout your game! </p>";
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
-
-
-
-
-
 
 
 
