@@ -1,36 +1,32 @@
-
 function Character() {
-	this.health = 100;
-	this.bananas = 1;
-
-}
-
-
-function Burglar(color){
-	this.mask = color;
-}
-
-function Punk(color){
-	this.hair = style;
-}
-
-function Janitor(color){
-	this.mop = color;
-}
-
-function affectScore(effect,number, cause){
-	if(effect === 'gained'){
-		this.bananas += number;
-	}else if(effect === "lost"){
-		this.bananas -= number;
-	}
-	console.log('You ' + effect + ' ' + number + " bananas from the " + cause + '. You have ' + this.bananas + " total bananas.");
+	this.health = health;
+	this.bananas = bananas;
 }
 
 Burglar.prototype = new Character();
 Punk.prototype = new Character();
 Janitor.prototype = new Character();
 
+function Burglar(color){
+	this.mask = color;
+}
+
+function Punk(color){
+	this.hair = color;
+}
+
+function Janitor(color){
+	this.mop = color;
+}
+
+function affectScore(affect,number, cause){
+	if(affect === 'gained'){
+		this.bananas += number;
+	}else if(affect === "lost"){
+		this.bananas -= number;
+	}
+	console.log('You ' + affect + ' ' + number + " bananas from the " + cause + '. You have ' + this.bananas + " total bananas.");
+}
 
 function chooseCharacter(type){
 var player;
@@ -43,7 +39,7 @@ else if (type==="janitor"){
 }
 
 else if (type==="punk") {
-	player=new Punk();	
+	player=new Punk();
 }
 
 document.getElementById("prologue").style.display="none";
@@ -53,7 +49,7 @@ return player;
 function getBanana(){
 	this.score = +1;
 	getScore =>{return this.score}
-}
+	}
 }
 
 function hideAll() {
@@ -68,8 +64,6 @@ var htmlOutput = "<h1>Welcome to the Aquarium!</h1>";
 htmlOutput += "<p> Swim through the shark tank or take a ride on a penguin to get to the next enclosure! .</p>";
 htmlOutput += '<button class="button" onclick="aquariumEducation()" type="button">Shark Tank</button>';
 htmlOutput += '<button class="button" onclick="aquariumEducation()" id="btnSpace" type="button">Ride a Penguin</button>';
-// affectScore.call(player,'gained',5,'monkey');
-// console.log(player.bananas);
 document.getElementById("storyArea").innerHTML= htmlOutput;
 }
 
@@ -235,11 +229,10 @@ document.getElementById("storyArea").innerHTML= htmlOutput;
 
 
 
-//at end of game, link one button to results= final score and final health 
+//at end of game, link one button to results= final score and final health
 
-//each area is a function that modifies the story area (html id) when it is called 
+//each area is a function that modifies the story area (html id) when it is called
 //can re-write HTML in JS .innerHTML will do the changes
 
 // <button onclick= "hideAll(); showOne('aquarium');"
-//                         type="button">Aquarium</button>    
-
+//                         type="button">Aquarium</button>
